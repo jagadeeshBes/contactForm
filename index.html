@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="#" class="form-contant">
+       
+            <div class="name">
+                <label for="name">Full Name</label>
+                <input type="text" class="name-input"  placeholder="Enter your name" onkeyup="nameValidation()">
+                <span class="error-Name"></span>
+            </div>
+            <div class="Phone">
+                <label for="">Phone No.</label>
+                <input type="text" placeholder="123 456 7890" onkeyup="phoneValidation()" class="phone-no">
+                <span class="error-phone"></span>
+            </div>
+            <div class="email">
+                <label for="">Email Id</label>
+                <input type="text" placeholder="Enter Email" onkeyup=" emailValidation()" class="email-id">
+                <span class="error-email"></span>
+            </div>
+            <div class="text">
+                <label for="">Your Message</label>
+                <textarea name="" placeholder="Enter your message" class="textArea" onkeyup="areaValidation()" id="" cols="30" rows="7"></textarea>
+                <span class="error-message"></span>
+            </div>
+          <div class="btn">
+            <button onclick="return ValidationForm()">Submit</button>
+            <span class="error-submit"></span>
+          </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
